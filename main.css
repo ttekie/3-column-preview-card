@@ -12,7 +12,7 @@
    --nt-transparent-white: hsla(0, 0%, 100%, 0.75);
    --nt-dark-cyan: hsl(179, 100%, 13%);
 }
-.main__section {
+main {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -20,13 +20,14 @@
    font-size: 1.2rem;
    font-family: 'Lexend Deca', sans-serif;
 }
-.wrapper {
+.card__container {
    width: 85%;
    max-width: 375px;
 }
-.container {
+.box {
    color: var(--nt-transparent-white);
    padding: 2.8rem;
+   
 }
 img {
    margin: 1.2rem 0;
@@ -72,18 +73,18 @@ button {
 
 /**** media query style for bigger screen size *****/
 @media (min-width: 640px) {
-   .main__section {
+   main {
       font-size: 0.9rem;
       height: 100vh;
       padding: 0;
    }
-   .wrapper {
+   .card__container {
       display: flex;
       justify-content: center;
       width: 70%;
       max-width: 1280px; 
    }
-   .container {
+   .box {
       padding: 1.8rem 2.8rem;
       max-width: 395px;
    }
@@ -92,6 +93,7 @@ button {
    }
    button {
       margin-top: 3rem; 
+      border: 2px solid transparent;
    }
    button:hover {
       background-color: transparent;
